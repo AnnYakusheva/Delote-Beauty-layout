@@ -207,7 +207,7 @@ a {
 }
 
 .represent {
-  background: no-repeat url("img/bgc.png");
+  background: no-repeat url("../img/bgc.png");
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
