@@ -6,20 +6,33 @@
     align-items: center;
     position: relative;
 
+    &__text {
+        position: absolute;
+        width: inherit;
+        top: 267px;
+    }
+
     &__headline {
-    font-weight: 700;
-    font-size: 5vw;
-    line-height: 120%;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 120%;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .scroll__down {
-        position: absolute;
-        left: 44%;
-        bottom: 40px;
-        width: 10%;
+        margin: 60px auto 0;
+        width: min-content;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        &::after {
+            content: 'Прокрутите вниз';
+            color: $white;
+            padding-left: 16px;
+        }
     }
 }
 

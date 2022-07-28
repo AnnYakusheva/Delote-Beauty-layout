@@ -1,9 +1,10 @@
+@charset "UTF-8";
 body {
   font-family: 'Cormorant Garamond', serif;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: white;
+  color: #fff;
   background: #111111;
 }
 
@@ -21,6 +22,7 @@ body {
 .container {
   margin: 0 auto;
   width: 68%;
+  height: 100%;
 }
 
 .line {
@@ -219,6 +221,12 @@ a {
   position: relative;
 }
 
+.represent__text {
+  position: absolute;
+  width: inherit;
+  top: 267px;
+}
+
 .represent__headline {
   font-weight: 700;
   font-size: 5vw;
@@ -229,10 +237,25 @@ a {
 }
 
 .represent .scroll__down {
-  position: absolute;
-  left: 44%;
-  bottom: 40px;
-  width: 10%;
+  margin: 60px auto 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.represent .scroll__down::after {
+  content: 'Прокрутите вниз';
+  color: #fff;
+  padding-left: 16px;
 }
 
 .introduction {
