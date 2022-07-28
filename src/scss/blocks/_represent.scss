@@ -1,0 +1,25 @@
+.represent {
+    background: no-repeat url('/src/img/bgc.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__headline {
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 120%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    }
+
+    .scroll__down {
+        position: absolute;
+        left: 44%;
+        bottom: 40px;
+        width: 10%;
+    }
+}
+

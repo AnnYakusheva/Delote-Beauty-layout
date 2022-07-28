@@ -1,0 +1,52 @@
+.header {
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        margin: 30.6px 0;
+        width: inherit;
+        z-index: 10;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 6.25%;
+
+        & a {
+            text-decoration: none;
+            outline: none;
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.3s;
+
+            &:hover {
+                color: $cameo;
+            }
+        }
+    }
+
+    &__burger {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            line {
+                stroke: #CDAA7D;
+            }
+        }
+    }
+
+
+    &__line {
+        top: 100px;
+        z-index: 10;
+    }
+}

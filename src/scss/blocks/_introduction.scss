@@ -1,0 +1,17 @@
+.introduction {
+    background: $black;
+    text-align: center;
+
+    &__description {
+        width: 635px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+        padding-bottom: 83px;
+    }
+
+    &__logo {
+        padding: 90px 0 43px 0;
+    }
+}

@@ -1,0 +1,47 @@
+@import './variables';
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: white;
+    background: #111111;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    margin: 0 auto;
+    width: 68%;
+}
+
+.line {
+    border: 0.5px solid white;
+    position: absolute;
+    width: inherit;
+    // top: 100px;
+}
+
+.instagram {
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        path {
+            stroke: #CDAA7D;
+        }
+    }
+}
+
+.display-block {
+    display: block !important;
+}

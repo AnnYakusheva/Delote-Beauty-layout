@@ -1,0 +1,19 @@
+.footer {
+    position: relative;
+    background: $black;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 59px 0 59px 0;
+    }
+
+    &__copyrights {
+        padding: 22px 0;
+    }
+}
+
+.copyrights {
+    text-align: center;
+}

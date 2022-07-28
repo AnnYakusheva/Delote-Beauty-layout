@@ -1,0 +1,48 @@
+.burger {
+    height: calc(100% - 31.4px);
+    background: $black;
+    position: absolute;
+    width: 235px;
+    right: 0;
+    padding: 31.4px 57px 0 57px;
+    z-index: 10;
+    display: none;
+
+    &__close {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            path {
+                stroke: $cameo;
+            }
+        }
+    }
+
+    &__description {
+        padding: 128.3px 0 57px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        padding-bottom: 11.5px;
+
+        &:last-child {
+            padding-bottom: 42.8px;
+        }
+    }
+
+    &__headline {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        padding-bottom: 18.5px;
+    }
+}
