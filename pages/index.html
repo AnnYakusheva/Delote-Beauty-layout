@@ -4,7 +4,7 @@
         <title>Delote Beauty</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="src/css/style.css" rel="stylesheet">
+        <link href="../src/css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <body>
     <header class="header">
         <div class="container">
-            <div class="header__wrapper">
+            <div class="header__wrapper position-absolute">
                 <a href="#" class="instagram">
                     <svg width="17.8" height="17.8" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.5341 1H7.46592C3.89455 1 1 3.89507 1 7.46592V18.5341C1 22.1054 3.89507 25 7.46643 25H18.5336C22.1049 25 25 22.1049 25 18.5336V7.46592C25 3.89455 22.1049 1 18.5336 1H18.5341Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -21,9 +21,9 @@
                     </svg>                            
                 </a>
                 <div class="header__controls">
-                    <a href="#" class="header__main">Главная</a>
-                    <a href="#" class="header__masters">Мастера</a>
-                    <a href="#" class="header__cosmetics">Косметика</a>
+                    <a href="index.html" class="text">Главная</a>
+                    <a href="team.html" class="text">Мастера</a>
+                    <a href="#" class="text">Косметика</a>
                 </div>
                 <div class="header__logo">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,9 +31,9 @@
                     </svg>                        
                 </div>
                 <div class="header__controls">
-                    <a href="#" class="header__main">Акции</a>
-                    <a href="#" class="header__masters">Отзывы</a>
-                    <a href="#" class="header__cosmetics">Контакты</a>
+                    <a href="#" class="text">Акции</a>
+                    <a href="#" class="text">Отзывы</a>
+                    <a href="contacts.html" class="text">Контакты</a>
                 </div>
                 <button class="header__burger" id="header__burger">
                     <svg width="37" height="15.5" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,19 +51,19 @@
                     <path d="M29 29L1 1M1 29L29 1L1 29Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>  
             </div>              
-            <p class="burger__description">
+            <p class="burger__description text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec pellentesque leo ac placerat. Morbi.
             </p>
-            <div class="burger__contacts">
-                <h3 class="burger__headline">Контакты</h3>
-                <p class="burger__text">+7 (812) 123-45-67</p>
-                <p class="burger__text">+7 (812) 123-45-67</p>
-                <p class="burger__text">Новоостровский проспект, дом 36 лит. С</p>
+            <div class="contacts-block">
+                <h3 class="contacts-block__title titles">Контакты</h3>
+                <p class="contacts-block__text text">+7 (812) 123-45-67</p>
+                <p class="contacts-block__text text">+7 (812) 123-45-67</p>
+                <p class="contacts-block__text text">Новоостровский проспект, дом 36 лит. С</p>
             </div>
-            <div class="burger__mode">
-                <h3 class="burger__headline">Режим работы</h3>
-                <p class="burger__text">C 10:00 до 21:00 (Пн-Пт)</p>
-                <p class="burger__text">С 11:00 до 20:00 (Сб-Вс)</p>
+            <div class="contacts-block">
+                <h3 class="contacts-block__title titles">Режим работы</h3>
+                <p class="contacts-block__text text">C 10:00 до 21:00 (Пн-Пт)</p>
+                <p class="contacts-block__text text">С 11:00 до 20:00 (Сб-Вс)</p>
             </div>
         </div>
     </header>
@@ -88,7 +88,7 @@
                         <path d="M22.0513 36.5714C26.1538 36.5714 29.4017 37.8546 31.7949 40.4211C34.359 42.8271 35.6411 46.0351 35.6411 50.0451C35.6411 54.3759 34.1026 57.8246 31.0257 60.391C28.1197 62.797 24.1026 64 18.9744 64C12.9915 64 8.29064 61.8346 4.87183 57.5038C1.62397 53.1729 0 46.9975 0 38.9774C0 31.7594 1.70941 25.1028 5.12821 19.0075C8.54702 12.7519 13.6752 6.49623 20.5129 0.240597C20.6838 0.0801979 20.9402 0 21.282 0C21.7949 0 22.2222 0.2406 22.5641 0.721797C22.906 1.203 22.906 1.604 22.5641 1.9248C14.188 9.94485 9.99999 19.4085 9.99999 30.3158C9.99999 34.807 10.8547 38.0952 12.5641 40.1805C14.1026 37.7744 17.265 36.5714 22.0513 36.5714ZM66.4103 36.5714C70.5128 36.5714 73.7607 37.8546 76.1538 40.4211C78.7179 42.8271 80 46.0351 80 50.0451C80 54.3759 78.4615 57.8246 75.3846 60.391C72.4786 62.797 68.4616 64 63.3334 64C57.3505 64 52.6496 61.8346 49.2308 57.5038C45.9829 53.1729 44.359 46.9975 44.359 38.9774C44.359 31.7594 46.0684 25.1028 49.4872 19.0075C52.906 12.7519 58.0342 6.49623 64.8718 0.240597C65.0427 0.0801979 65.2992 0 65.641 0C66.1539 0 66.5812 0.2406 66.9231 0.721797C67.265 1.203 67.265 1.604 66.9231 1.9248C58.547 9.94485 54.359 19.4085 54.359 30.3158C54.359 34.807 55.2137 38.0952 56.9231 40.1805C58.4616 37.7744 61.624 36.5714 66.4103 36.5714Z" fill="white"/>
                     </svg>
                 </div>
-                <p class="introduction__description">
+                <p class="introduction__description titles">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae amet. Ipsum, pharetra donec ornare velit. Id at quisque accumsan risus ac ipsum ut. Sit elit, facilisi proin non malesuada sociis tristique. Viverra augue lorem ut quisque quam tortor, malesuada iaculis. <br/>
                     Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra rutrum. Fames ultrices condimentum tortor nec penatibus. Velit imperdiet sapien fringilla vestibulum sit fames.
                 </p>
@@ -98,39 +98,39 @@
             <h2 class="visually-hidden">Услуги</h2>
             <div class="container">
                 <div class="services__wrapper">
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services1.png" alt="Парикмахерские услуги">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services1.png" alt="Парикмахерские услуги">
                         </div>
                         <p class="services__name">Парикмахерские услуги</p>
                     </a>
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services2.png" alt="Маникюр">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services2.png" alt="Маникюр">
                         </div>
                         <p class="services__name">Маникюр</p>
                     </a>
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services3.png" alt="Педикюр">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services3.png" alt="Педикюр">
                         </div>
                         <p class="services__name">Педикюр</p>
                     </a>
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services4.png" alt="Косметология">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services4.png" alt="Косметология">
                         </div>
                         <p class="services__name">Косметология</p>
                     </a>
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services5.png" alt="Эстетист по телу">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services5.png" alt="Эстетист по телу">
                         </div>
                         <p class="services__name">Эстетист по телу</p>
                     </a>
-                    <a href="#" class="services__block">
-                        <div class="services__img">
-                            <img src="src/img/services6.png" alt="Визаж">
+                    <a href="prices.html" class="services__block">
+                        <div class="main__img-block">
+                            <img src="../src/img/services6.png" alt="Визаж">
                         </div>
                         <p class="services__name">Визаж</p>
                     </a>
@@ -157,23 +157,23 @@
         </section>
         <section class="works">
             <div class="container">
-                <h2 class="works__header">Наши работы</h2>
+                <h2 class="headlines">Наши работы</h2>
                 <div class="works__menu">
-                    <button class="works__link">Показать все</button>
-                    <button class="works__link">Парикмахерские услуги</button>
-                    <button class="works__link">Маникюр</button>
-                    <button class="works__link">Педикюр</button>
+                    <button class="works__link titles">Показать все</button>
+                    <button class="works__link titles">Парикмахерские услуги</button>
+                    <button class="works__link titles">Маникюр</button>
+                    <button class="works__link titles">Педикюр</button>
                 </div>
                 <div class="works__examples">
-                    <img class="works__examples-img" src="src/img/works1.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works2.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works3.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works4.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works5.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works6.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works7.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works8.png" alt="Галерея">
-                    <img class="works__examples-img" src="src/img/works9.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works1.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works2.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works3.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works4.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works5.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works6.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works7.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works8.png" alt="Галерея">
+                    <img class="works__examples-img" src="../src/img/works9.png" alt="Галерея">
                 </div>
             </div>
         </section>
@@ -181,26 +181,26 @@
     <footer class="footer">
         <div class="container">
             <h2 class="visually-hidden">Контакты</h2>
-            <div class="footer__line line"></div>
+            <div class="line"></div>
             <div class="footer__wrapper">
                 <div class="footer__logo">
                     <svg width="44.5" height="43" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M39.1904 34.5978H34.9553C37.7664 30.8686 39.3147 26.2056 39.3147 21.4677C39.3147 9.99511 30.6501 0.661377 19.9988 0.661377C9.34791 0.661377 0.682858 9.99552 0.682858 21.4677C0.682858 26.2064 2.23032 30.8694 5.04109 34.5978H0.809553C0.36268 34.5978 0 34.9605 0 35.4074V38.5298C0 38.9767 0.36268 39.3394 0.809553 39.3394H12.3663C12.8132 39.3394 13.1759 38.9767 13.1759 38.5298V35.0516C13.1759 34.8589 13.1075 34.6731 12.9828 34.527L12.9379 34.474C12.8925 34.4201 12.8399 34.3728 12.782 34.3331C8.8047 31.5766 6.33354 26.6472 6.33354 21.4673C6.33354 13.1103 12.4639 6.31165 19.9988 6.31165C27.5333 6.31165 33.6636 13.1107 33.6636 21.4673C33.6636 26.6691 31.1771 31.609 27.1755 34.3598C26.9557 34.5108 26.8245 34.7601 26.8245 35.0265V38.529C26.8245 38.9759 27.1872 39.3386 27.6341 39.3386H39.1904C39.6373 39.3386 40 38.9759 40 38.529V35.4066C40 34.9601 39.6381 34.5978 39.1904 34.5978Z" fill="white"/>
                     </svg>   
                 </div>
-                <div class="burger__contacts">
-                    <h3 class="burger__headline">Контакты</h3>
-                    <p class="burger__text">+7 (812) 123-45-67</p>
-                    <p class="burger__text">+7 (812) 123-45-67</p>
-                    <p class="burger__text">Новоостровский проспект, дом 36 лит. С</p>
+                <div class="contacts-block">
+                    <h3 class="contacts-block__title titles">Контакты</h3>
+                    <p class="contacts-block__text text">+7 (812) 123-45-67</p>
+                    <p class="contacts-block__text text">+7 (812) 123-45-67</p>
+                    <p class="contacts-block__text text">Новоостровский проспект, дом 36 лит. С</p>
                 </div>
-                <div class="burger__mode">
-                    <h3 class="burger__headline">Режим работы</h3>
-                    <p class="burger__text">C 10:00 до 21:00 (Пн-Пт)</p>
-                    <p class="burger__text">С 11:00 до 20:00 (Сб-Вс)</p>
+                <div class="contacts-block">
+                    <h3 class="contacts-block__title titles">Режим работы</h3>
+                    <p class="contacts-block__text text">C 10:00 до 21:00 (Пн-Пт)</p>
+                    <p class="contacts-block__text text">С 11:00 до 20:00 (Сб-Вс)</p>
                 </div>
                 <div class="footer__instagram">
-                    <h3 class="burger__headline">Мы в инстаграм</h3>
+                    <h3 class="contacts-block__title titles">Мы в инстаграм</h3>
                     <a href="#" class="instagram">
                         <svg width="26.7" height="26.7" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.5341 1H7.46592C3.89455 1 1 3.89507 1 7.46592V18.5341C1 22.1054 3.89507 25 7.46643 25H18.5336C22.1049 25 25 22.1049 25 18.5336V7.46592C25 3.89455 22.1049 1 18.5336 1H18.5341Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -210,12 +210,12 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__line line"></div>
+            <div class="line"></div>
             <div class="footer__copyrights">
                 <p class="copyrights">Copyright © 2017 - 2022</p>
             </div>
         </div>
     </footer>
-    <script src="src/js/script.js"></script>
+    <script src="../src/js/script.js"></script>
     </body>
 </html>

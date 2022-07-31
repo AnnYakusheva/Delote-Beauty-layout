@@ -4,9 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
         margin: 30.6px 0;
-        width: inherit;
         z-index: 10;
     }
 
@@ -19,9 +17,7 @@
         & a {
             text-decoration: none;
             outline: none;
-            color: $white;
             font-weight: 600;
-            font-size: 18px;
             transition: 0.3s;
 
             &:hover {
@@ -49,4 +45,9 @@
         top: 100px;
         z-index: 10;
     }
+}
+
+.position-absolute {
+    position: absolute;
+    width: inherit;
 }

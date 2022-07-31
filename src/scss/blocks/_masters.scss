@@ -1,0 +1,30 @@
+.masters {
+    display: flex;
+
+    &__wrapper {
+        margin: 133.6px 0 auto;
+    }
+
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 74px 0 15px;
+        justify-content: space-between;
+    }
+
+    &__name {
+        margin: 22.2px 0 7.5px;
+        width: fit-content;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+    &__profession {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 59px;
+    }
+}

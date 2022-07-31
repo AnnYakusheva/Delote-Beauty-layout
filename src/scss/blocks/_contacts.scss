@@ -1,0 +1,14 @@
+.contacts {
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        margin: 59px auto;
+    }
+
+    &__block {
+        display: flex;
+        width: 50%;
+        flex-basis: 45%;
+        justify-content: space-between;
+    }
+}

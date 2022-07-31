@@ -2,25 +2,14 @@
     background: $black;
     position: relative;
 
-    &__header {
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 120%;
-        text-align: center;
-        padding: 0 0 14.5px 0;
-    }
-
     &__menu {
-        padding: 44.5px 0;
+        margin-bottom: 44.5px;
         text-align: center;
     }
 
     &__link {
         font-family: 'Cormorant Garamond', serif;;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 130%;
-        text-align: center;
         background: transparent;
         margin: 0 22.5px 0;
         color: white;
@@ -28,11 +17,20 @@
         outline: none;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+        position: relative;
 
         &:hover {
-            border: none;
-            border-bottom: 2px solid $cameo;
             color: $cameo;
+            &::after {
+                content: '';
+                border: none;
+                border-bottom: 1px solid $cameo;
+                width: 100%;
+                display: block;
+                color: $cameo;
+                position: absolute;
+                padding-top: 3px;
+            }
         }
     }
 

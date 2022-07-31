@@ -11,42 +11,15 @@
         transition: 0.3s ease-in-out;
         color: $white;
         outline: none;
+        position: relative;
 
         &:hover {
             color: $cameo;
         }
     }
 
-    &__img {
-        position: relative;
-        z-index: 10;
-        padding-bottom: 22.2px;
-
-        img {
-            width: 294px;
-            height: auto;
-            transition: 0.3s ease-in-out;
-
-            &:hover {
-                width: 297px;
-                display: flex;
-            }
-        }
-        &::after {
-            content: '';
-            border: 1px solid $cameo;
-            opacity: 0.5;
-            width: 294px;
-            height: 222px;
-            left: 14.8px;
-            top: -14.8px;
-            position: absolute;
-            z-index: -1;
-        }
-    }
-
     &__name {
-        margin-bottom: 59px;
+        margin: 22px 0 59px;
         width: fit-content;
         font-weight: 400;
         font-size: 22px;
